@@ -4,6 +4,11 @@ const mongoose = require('mongoose');
 const Product = mongoose.model('Product');
 
 exports.get = (req, res, next) => {
+  Product.find({})
+
+}
+
+exports.get = (req, res, next) => {
   Product
     .find({})
     .then(data => {
